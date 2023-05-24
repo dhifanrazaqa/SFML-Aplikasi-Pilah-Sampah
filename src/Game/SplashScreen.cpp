@@ -16,8 +16,8 @@ SplashScreen::~SplashScreen()
 
 void SplashScreen::Init()
 {
-    m_context->m_assets->AddFont(SPLASH_FONT, "../assets/fonts/Best Wishes.ttf");
-    m_context->m_assets->AddTexture(SPLASH_SCREEN, "../assets/textures/splashScreen.png");
+    m_context->m_assets->AddFont(SPLASH_FONT, "../../assets/fonts/Best Wishes.ttf");
+    m_context->m_assets->AddTexture(SPLASH_SCREEN, "../../assets/textures/splashScreen.png");
 
     // Enter Button
     m_pressEnter.setFont(m_context->m_assets->GetFont(SPLASH_FONT));

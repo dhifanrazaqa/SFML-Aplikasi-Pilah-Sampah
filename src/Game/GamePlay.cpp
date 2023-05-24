@@ -25,11 +25,11 @@ GamePlay::~GamePlay() {
 
 void GamePlay::Init()
 {
-    m_context->m_assets->AddTexture(PLAYER_ORGANIK, "../assets/textures/Organik.png");
-    m_context->m_assets->AddTexture(PLAYER_ANORGANIK, "../assets/textures/Anorganik.png");
-    m_context->m_assets->AddTexture(PLAYER_B3, "../assets/textures/B3.png");
-    m_context->m_assets->AddTexture(GAME_BG, "../assets/textures/game-bg.jpg");
-    m_context->m_assets->AddTexture(FOOD, "../assets/textures/food.png");
+    m_context->m_assets->AddTexture(PLAYER_ORGANIK, "../../assets/textures/Organik.png");
+    m_context->m_assets->AddTexture(PLAYER_ANORGANIK, "../../assets/textures/Anorganik.png");
+    m_context->m_assets->AddTexture(PLAYER_B3, "../../assets/textures/B3.png");
+    m_context->m_assets->AddTexture(GAME_BG, "../../assets/textures/game-bg.jpg");
+    m_context->m_assets->AddTexture(FOOD, "../../assets/textures/food.png");
 
     m_player.Init(
         m_context->m_assets->GetTexture(PLAYER_ORGANIK),

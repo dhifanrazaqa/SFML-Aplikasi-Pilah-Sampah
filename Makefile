@@ -7,7 +7,7 @@ compile:
 	mv ./*.o ./bin/out || move ./*.o ./bin/out
 
 link:
-	g++ bin/out/*.o -o bin/main -Lsrc/lib -lsfml-graphics -lsfml-window -lsfml-system -lsfml-audio
+	g++ bin/out/*.o -o bin/64/main -Lsrc/lib -lsfml-graphics -lsfml-window -lsfml-system -lsfml-audio
 
 link32:
-	g++ bin/out/*.o -o bin/main -Lsrc/lib/32-bit -lsfml-graphics -lsfml-window -lsfml-system -lsfml-audio
+	g++ bin/out/*.o -o bin/32/main -Lsrc/lib/32-bit -lsfml-graphics -lsfml-window -lsfml-system -lsfml-audio
