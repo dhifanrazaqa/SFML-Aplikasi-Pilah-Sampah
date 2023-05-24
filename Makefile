@@ -1,9 +1,13 @@
 all: compile link
+32: compile link32
 
 compile:
 	C:/MinGW/bin/g++.exe -c src/main.cpp -Isrc/include
 	C:/MinGW/bin/g++.exe -c src/Game/*.cpp -Isrc/include
-	move ./*.o ./bin/out
+	mv ./*.o ./bin/out || move ./*.o ./bin/out
 
 link:
 	g++ bin/out/*.o -o bin/main -Lsrc/lib -lsfml-graphics -lsfml-window -lsfml-system -lsfml-audio
+
+link32:
+	g++ bin/out/*.o -o bin/main -Lsrc/lib/32-bit -lsfml-graphics -lsfml-window -lsfml-system -lsfml-audio

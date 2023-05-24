@@ -1,4 +1,3 @@
 bin/main.exe
-bin/out
-
+bin/out/*
 .vscode/
